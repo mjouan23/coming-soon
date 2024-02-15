@@ -39,7 +39,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/background.jpg');
-    object-fit: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
