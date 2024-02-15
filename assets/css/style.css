@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    text-align: center;
+}
+
+#left {
+    width: 35vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left img {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+#right {
+    color: #FFF;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/background.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+#right h2 {
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+#right h2>span {
+    margin-top: 25px;
+    display: block;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 8px rgba(111, 66, 80, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+#right h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#right div.line {
+    width: 60%;
+    height: 3px;
+    transform-origin: left center;
+    margin: 20px auto 30px auto;
+    background-image: linear-gradient(to right, #e86467 0%, #c64596 51%, #af31b4 100%);
+}
+
+#right a.btn {
+    margin-top: 45px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to left top, #e86467 0%, #c64596 51%, #af31b4 100%);
+    border: 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#right a.btn:hover {
+    background-position: left;
+}
+
+#right p {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #left {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #right {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #right h2>span {
+        font-size: 3.5rem;
+    }
+}
