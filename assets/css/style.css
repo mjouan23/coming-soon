@@ -61,6 +61,7 @@ main {
 }
 
 #right {
+    padding: 40px;
     color: #FFF;
     width: 65vw;
     display: flex;
