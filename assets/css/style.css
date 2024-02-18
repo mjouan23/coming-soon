@@ -4,7 +4,12 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    color: inherit;
     font-family: 'Open Sans';
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 p {
@@ -93,6 +98,29 @@ main {
     font-weight: 600;
 }
 
+#left .icons {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#left .icons a:first-child>i {
+    color: #af31b4;
+}
+
+#left .icons a:nth-child(2)>i {
+    color: #c64596;
+}
+
+#left .icons a:last-child>i {
+    color: #e86467;
+}
+
+#left .button {
+    display: none;
+}
+
 @media (max-width: 767px) {
     main {
         flex-direction: column;
@@ -102,6 +130,10 @@ main {
     #left {
         width: 100vw;
         height: 100vh;
+    }
+
+    #left .button {
+        display: block;
     }
 
     #right {
